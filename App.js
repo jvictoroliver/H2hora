@@ -6,7 +6,7 @@ import Home from './src/pages/Home';
 import Chose from './src/pages/Chose/chose';
 import Login from './src/pages/Log-in/log';
 import Register from './src/pages/Register/register';
-
+import Genero from './src/pages/Genero/genero';
 const Stack = createNativeStackNavigator();
 
 const navigationOptions = {
@@ -17,11 +17,12 @@ const navigationOptions = {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home" screenOptions={navigationOptions}>
+      <Stack.Navigator initialRouteName="Genero" screenOptions={navigationOptions}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
             <Stack.Screen name="Chose" component={Chose} />
+            <Stack.Screen name="Genero" component={Genero} />
           </Stack.Navigator>
         </NavigationContainer>
         );
