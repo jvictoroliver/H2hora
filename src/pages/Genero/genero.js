@@ -1,37 +1,66 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ImageBackground, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import styles from './generostyle.js';
 
-export default function Genero() {
+export default function Genero({navigation}) {
     const [user, setGender] = useState({ gender: 'não definido' })
 
     const handleGender = (e) => {
         return setGender({ ...user, gender: `${e.target.name}` });
     }
-
+    function Pesocreen(){
+        navigation.navigate('Peso');
+      }
     return (
         <View style={styles.container}>
 
-            <View style={{ marginTop: 24, marginBottom: 100, padding: 16 }}>
+            <View style={{ marginTop: 24, marginBottom: 110, padding: 16 }}>
                 <Text style={styles.containerText}>QUAL É O SEU SEXO?</Text>
             </View>
 
-            <View style={{ width: '80%', marginBottom: 200 }}>
+            <View style={{ width: '90%', marginBottom: 200 }}>
                 <Text style={styles.containerText}>O cálculo será baseado
                     em suas características
                     principais.</Text>
             </View>
-            <View>
-            <button style={{ width: '100px', height: '100px', color: 'red' }} name="feminino" onClick={handleGender}>feminino</button>
-            <button style={{ width: '100px', height: '100px', color: 'blue' }} name="masculino" onClick={handleGender}>masculino</button>
+            <View style={{ display: 'flex', flexDirection: 'row', }}>
+                
+                <button
+                
+                    style={{
+                        width: '150px',
+                        height: '150px',
+                        borderRadius: '60%',
+                        overflow:"hidden",
+                        marginRight: '18px',
+                        backgroundColor:'blue',
+                    }}
+                    name="masculino"
+                    onClick={handleGender}
+                >
+                      
+                </button>
+                <button
+                    style={{
+                        width: '150px',
+                        height: '150px',
+                        borderRadius: '60%',
+                        marginRight:'18px',
+                        backgroundColor:"red",
+                    }}
+                    name="feminino"
+                    onClick={handleGender}
+                >
 
-            
-            </View><p> meu genero é {user.gender}</p>
+                </button>
+            </View>
+
+            <p> meu genero é {user.gender}</p>
             <View style={{ width: '80%', }}>
 
                 <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}>PROXIMO</Text>
+                    <Text style={styles.buttonText} onPress={Pesocreen} >PROXIMO</Text>
                 </TouchableOpacity>
             </View>
             <Text style={{ color: '#FFFFFF' }}>

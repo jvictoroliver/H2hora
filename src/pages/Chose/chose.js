@@ -4,7 +4,11 @@ import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from './choseStyles.js';
 
-export default function Chose() {
+export default function Chose({navigation}) {
+  function Generocreen(){
+    navigation.navigate('Genero');
+  }
+
   return (
     <View style={styles.container}>
 
@@ -23,7 +27,7 @@ export default function Chose() {
           <Text style={styles.buttonText}>Configurar</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Mais tarde</Text>
+          <Text style={styles.buttonText} onPress={Generocreen}>Mais tarde</Text>
         </TouchableOpacity>
       </View>
       </ImageBackground>
