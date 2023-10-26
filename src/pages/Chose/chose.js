@@ -3,9 +3,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from './choseStyles.js';
-
-export default function Chose({navigation}) {
-  function Generocreen(){
+import Button from '../../componentes/Button';
+export default function Chose({ navigation }) {
+  function Generocreen() {
     navigation.navigate('Genero');
   }
 
@@ -13,24 +13,31 @@ export default function Chose({navigation}) {
     <View style={styles.container}>
 
       <ImageBackground
-      source={require('../../imagens/fundo2.jpg')}
-      style={styles.ImageBackground}>
+        source={require('../../imagens/fundo2.jpg')}
+        style={styles.ImageBackground}>
 
-      <View style={{marginTop: 28, marginBottom: 200}}>
-        <Text style={styles.containerText}>CADASTRO</Text>
-      </View>
-      <View style={{width: '80%', marginBottom: 250}}>
-        <Text style={styles.containerText}>Deseja configurar seu perfil?</Text>
-      </View>
-      <View style={{width: '80%',}}>
-      <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Configurar</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText} onPress={Generocreen}>Mais tarde</Text>
-        </TouchableOpacity>
-      </View>
+        <View style={{ marginTop: 28, marginBottom: 200 }}>
+          <Text style={styles.containerText}>CADASTRO</Text>
+        </View>
+
+        <View style={{ width: 250, marginBottom: 250 }}>
+          <Text style={styles.containerText}>Deseja configurar seu perfil?</Text>
+        </View>
+
+        <View style={{ width: 250, }}>
+
+          <Button style={styles.button} type="chose"
+            text="CONFIGURAR">
+          </Button>
+
+          <Button style={styles.button} type="chose"
+            onPress={Generocreen}
+            text="MAIS TARDE">
+          </Button>
+
+        </View>
       </ImageBackground>
+      <StatusBar style="auto" />
     </View>
   );
 }

@@ -13,23 +13,12 @@ export default StyleSheet.create({
       borderRadius: 10,
       fontSize: 16,
       textAlign: 'center',
-      width: 310,
+      width: 300,
     },
     ImageBackground:{
       flex: 1,
       backgroundColor: '#008FBE',
       alignItems: 'center',
-    },
-    button: {
-      backgroundColor: '#1E2F44', 
-      paddingVertical: 12, 
-      borderRadius: 10, 
-      marginBottom: 20
-    },
-    buttonText: {
-      color: '#ffffff', 
-      fontSize: 32, 
-      textAlign: 'center',
     },
     containerText: {
       fontSize: 32, fontFamily: 'bold, sans-serif', textAlign: 'center', color: 'white'

@@ -18,10 +18,5 @@ export default StyleSheet.create({
     textAlign: 'center',
     width: 310,
   },
-  button: {
-    backgroundColor: '#1E2F44', 
-    paddingVertical: 14, 
-    paddingHorizontal: 40, 
-    borderRadius: 10,
-  },
+  
 });

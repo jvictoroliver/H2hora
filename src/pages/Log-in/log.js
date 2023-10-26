@@ -3,7 +3,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
 import styles from './logStyles.js';
- 
+import Button from '../../componentes/Button';
+
 export default function Open({navigation}) {
 
   function ChoseScreen(){
@@ -33,17 +34,17 @@ export default function Open({navigation}) {
         <Text style={{ color: "#ffffff", fontSize: 20, marginBottom: 32, marginTop: 16, marginLeft: 70, textDecorationLine: 'underline'}}>Esqueci a senha</Text>
         </TouchableOpacity>
       </View>
-      <View>
-        <TouchableOpacity onPress={ChoseScreen}
-        style={styles.button}>
-          <Text style={{ color: '#ffffff', fontSize: 24}}>ENTRAR</Text>
-        </TouchableOpacity>
+      <View style={{ width: 150, }}>
+        <Button onPress={ChoseScreen} type="logininc"
+          text="ENTRAR">
+        </Button>
       </View>
       <View>
         <TouchableOpacity style={{ marginTop: 50 }} onPress={Registercreen}>
           <Text style={{ color: '#ffffff', fontSize: 20, textDecorationLine: 'underline'}}>Não possui cadastro?</Text>
         </TouchableOpacity>
       </View>
+      <StatusBar style="auto" />
     </View>
   );
 }
