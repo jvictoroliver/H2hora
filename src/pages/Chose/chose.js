@@ -3,7 +3,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from './choseStyles.js';
-import Button from '../../componentes/Button';
+import Button from '../../componentes/Button/index.js';
 export default function Chose({ navigation }) {
   function Generocreen() {
     navigation.navigate('Genero');

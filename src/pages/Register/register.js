@@ -3,7 +3,7 @@
 import { StatusBar } from 'expo-status-bar';;
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from './registerStyles';
-import Button from '../../componentes/Button';
+import Button from '../../componentes/Button/index.js';
 export default function Sign({ navigation }) {
 
   function LoginScreen() {

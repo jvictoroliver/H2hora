@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View, Image, ImageBackground } from 'react-native';
 import React from 'react';
 import styles from './styles.js'
-import Button from '../../componentes/Button';
+import Button from '../../componentes/Button/index.js';
 export default function Home({ navigation }) {
 
   function Registercreen() {
