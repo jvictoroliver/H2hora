@@ -6,17 +6,11 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: '#008FBE',
     alignItems: 'center',
+    
+  },
+  Input: {
+    fontSize: 32, fontFamily: 'bold, sans-serif', textAlign: 'center', color: 'white'
   },
 
-  caixa: {
-    backgroundColor: '#1E2F44',
-    height: 60,
-    color: 'white',
-    marginTop: 24,
-    borderRadius: 10,
-    fontSize: 20,
-    textAlign: 'center',
-    width: 310,
-  },
   
 });

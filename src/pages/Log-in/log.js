@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
 import styles from './logStyles.js';
 import Button from '../../componentes/Button';
-
+import Input from '../../componentes/Input';
 export default function Open({navigation}) {
 
   function ChoseScreen(){
@@ -23,11 +23,11 @@ export default function Open({navigation}) {
         />
       </View>
       <View style={{ marginBottom: 8 }}>
-        <Text style={{ color: "#ffffff", fontSize: 32}}>Entrar</Text>
+        <Text style={{ color: "#ffffff", fontSize: 32}}>ENTRAR</Text>
       </View>
       <View>
-        <TextInput style={styles.caixa} placeholder="USUÁRIO" placeholderTextColor="#ccc"/>
-        <TextInput style={styles.caixa} placeholder="SENHA" placeholderTextColor="#ccc"/>
+      <Input placeholder={"USUARIO"}/>
+      <Input placeholder={"SENHA"}/>
       </View>
       <View style={{ width: '100%' }}>
         <TouchableOpacity>

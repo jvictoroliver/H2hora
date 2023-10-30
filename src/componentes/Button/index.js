@@ -54,6 +54,9 @@ export default function Button({ onPress,
                 case "logininc":
                 selected = styles.chose;
                 break;
+                case "genero":
+                    selected = styles.genero;
+                    break;
         default:
             selected = styles.secondary;
             break;
@@ -103,6 +106,14 @@ const styles = StyleSheet.create({
         textAlign: "center" 
     },
     logininc:{
+        backgroundColor: "#1e2f44",
+        borderRadius: 12,
+        margin: 4,
+        margin: 8,
+        justifyContent: "center",
+        textAlign: "center"
+    },
+    gereno:{
         backgroundColor: "#1e2f44",
         borderRadius: 12,
         margin: 4,

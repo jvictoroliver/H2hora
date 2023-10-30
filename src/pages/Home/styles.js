@@ -12,5 +12,7 @@ export default StyleSheet.create({
       resizeMode: 'cover',
       alignItems: 'center',
   },
-
+  containerText: {
+    fontSize: 32, fontFamily: 'bold, sans-serif', textAlign: 'center', color: 'white'
+  },
 });

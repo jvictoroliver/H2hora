@@ -4,6 +4,8 @@ import { StatusBar } from 'expo-status-bar';;
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from './registerStyles';
 import Button from '../../componentes/Button/index.js';
+import Input from '../../componentes/Input/index.js';
+
 export default function Sign({ navigation }) {
 
   function LoginScreen() {
@@ -19,7 +21,7 @@ export default function Sign({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <View style={{ marginBottom: 80, marginTop: 40, flexDirection: 'row',  }}>
+      <View style={{ marginBottom: 80, marginTop: 60, flexDirection: 'row',  }}>
 
         <TouchableOpacity onPress={homeScreen}>
         <Image
@@ -32,11 +34,11 @@ export default function Sign({ navigation }) {
 
       </View>
 
-      <View>
-        <TextInput style={styles.caixa} placeholder="NOME" placeholderTextColor="#ccc" />
-        <TextInput style={styles.caixa} placeholder="E-MAIL" placeholderTextColor="#ccc" />
-        <TextInput style={styles.caixa} placeholder="SENHA" placeholderTextColor="#ccc" />
-        <TextInput style={styles.caixa} placeholder="CONFIRMAR SENHA" placeholderTextColor="#ccc" />
+      <View style={{padding:30, marginBottom:24}}>
+      <Input placeholder={"NOME"} type="maior"/>
+      <Input placeholder={"EMAIL"} type="maior"/>
+      <Input placeholder={"SENHA"} type="maior"/>
+      <Input placeholder={"CONFIRMAR SENHA"} type="maior"/>
       </View>
       <View style={{ marginTop: 40 ,width:200 }}>
         <Button onPress={ChoseScreen} type="register"

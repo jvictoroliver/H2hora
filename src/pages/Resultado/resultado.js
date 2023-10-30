@@ -7,7 +7,7 @@ export default function () {
 
     return (
         <ImageBackground
-        source={require('../../imagens/fundo2.jpg')}
+        source={require('../../imagens/fdresult.png')}
         style={{ flex: 1, resizeMode: 'cover' }}
         >
             <View style={styles.container}>
