@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { StatusBar, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from './resultadoStyles.js';
-
+import Button from '../../componentes/Button/index.js';
 export default function () {
 
     return (
@@ -20,11 +20,11 @@ export default function () {
                 </View>
 
                 <View style={{ width: '80%' }}>
-                    <TouchableOpacity style={styles.button}>
-                        <Text style={styles.buttonText}>PROSSEGUIR</Text>
-                    </TouchableOpacity>
+                <Button style={styles.button} type="chose"
+            text="PROXIMO">
+          </Button>
                 </View>
-                <Text style={{ color: '#fffff', padding: 15 }}>
+                <Text style={{ color: '#ffffff', padding: 15 }}>
                     3/3
                 </Text>
             </View>

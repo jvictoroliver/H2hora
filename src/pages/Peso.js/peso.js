@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from './pesoStyles.js';
-
+import Button from '../../componentes/Button/index.js';
 export default function Peso({ navigation }) {
     function Alturacreen() {
         navigation.navigate('Altura');
@@ -23,9 +23,10 @@ export default function Peso({ navigation }) {
 
             <View style={{ width: '80%', }}>
 
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText} onPress={Alturacreen}>PROXIMO</Text>
-                </TouchableOpacity>
+            <Button style={styles.button} type="chose"
+            onPress={Alturacreen}
+            text="PROXIMO">
+          </Button>
             </View>
             <Text style={{ color: '#FFFFFF', padding: 10 }}>
                 2 / 3

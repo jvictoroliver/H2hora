@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     gereno:{
         backgroundColor: "#1e2f44",
         borderRadius: 12,
-        margin: 4,
+        margin: 4, 
         margin: 8,
         justifyContent: "center",
         textAlign: "center"

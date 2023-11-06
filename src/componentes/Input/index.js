@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     margin: 12,
     justifyContent: "center",
     textAlign: "center",
-    color: "#fff"
+    color: "#d1cbc0"
   },
  maior:{
   padding: 28,

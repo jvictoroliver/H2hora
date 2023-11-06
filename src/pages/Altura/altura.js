@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from './alturaStyles.js';
-
+import Button from '../../componentes/Button/index.js';
 export default function Altura ({navigation}) {
  
     function Resultadocreen(){
@@ -23,9 +23,10 @@ principais.</Text>
            
             <View style={{ width: '80%',  }}>
 
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText} onPress={Resultadocreen}>PROXIMO</Text>
-                </TouchableOpacity>
+            <Button style={styles.button} type="chose"
+            onPress={Resultadocreen}
+            text="PROXIMO">
+          </Button>
             </View>
             <Text style={{ color: '#FFFFFF', padding:10 }}>
                 3/3

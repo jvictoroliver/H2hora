@@ -5,6 +5,7 @@ import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'reac
 import styles from './logStyles.js';
 import Button from '../../componentes/Button';
 import Input from '../../componentes/Input';
+import Texto from '../../componentes/Texto/index.js';
 export default function Open({navigation}) {
 
   function ChoseScreen(){
@@ -23,7 +24,7 @@ export default function Open({navigation}) {
         />
       </View>
       <View style={{ marginBottom: 8 }}>
-        <Text style={{ color: "#ffffff", fontSize: 32}}>ENTRAR</Text>
+        <Texto type="login" text={"ENTRAR"}></Texto>
       </View>
       <View>
       <Input placeholder={"USUARIO"}/>

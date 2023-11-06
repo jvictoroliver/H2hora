@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import styles from './generostyle.js';
-
+import Button from '../../componentes/Button/index.js';
 export default function Genero({navigation}) {
     const [user, setGender] = useState({ gender: 'não definido' })
 
@@ -59,9 +59,10 @@ export default function Genero({navigation}) {
             <p> meu genero é {user.gender}</p>
             <View style={{ width: '80%', }}>
 
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText} onPress={Pesocreen} >PROXIMO</Text>
-                </TouchableOpacity>
+            <Button style={styles.button} type="chose"
+            onPress={Pesocreen}
+            text="PROXIMO">
+          </Button>
             </View>
             <Text style={{ color: '#FFFFFF' }}>
                 1/3

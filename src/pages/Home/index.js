@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View, Image, ImageBackground } from
 import React from 'react';
 import styles from './styles.js'
 import Button from '../../componentes/Button/index.js';
+import Texto from '../../componentes/Texto/index.js';
 export default function Home({ navigation }) {
 
   function Registercreen() {
