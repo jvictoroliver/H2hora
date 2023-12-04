@@ -3,13 +3,13 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/pages/Home';
-import Chose from './src/pages/Chose/chose';
-import Login from './src/pages/Log-in/log';
-import Register from './src/pages/Register/register';
-import Genero from './src/pages/Genero/genero';
-import peso from './src/pages/Peso.js/peso';
-import altura from './src/pages/Altura/altura';
-import resultado from './src/pages/Resultado/resultado';
+import Chose from './src/pages/Chose/index.js';
+import Login from './src/pages/Log-in';
+import Register from './src/pages/Register';
+import Genero from './src/pages/Genero/index.js';
+import peso from './src/pages/Peso.js';
+import altura from './src/pages/Altura/index.js';
+import resultado from './src/pages/Resultado';
 const Stack = createNativeStackNavigator();
 
 const navigationOptions = {
